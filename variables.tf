@@ -2,7 +2,19 @@ variable "resource_group_name" {}
 variable "location" {}
 variable "vnet_name" {}
 variable "subnet" {}
-variable "vnet_space" {}
+variable "vnet_space" {
+  type = list(string)
+}
 variable "subnet_space" {}
 variable "vm_name" {}
 variable "dynamic" {}
+variable "vm_size" {}
+variable "true" {}
+variable "publisher" {}
+variable "offer" {}
+variable "sku" {}
+variable "caching" {}
+variable "create_option" {}
+variable "managed_disk_type" {}
+variable "admin_username" {}
+variable "admin_password" {}
